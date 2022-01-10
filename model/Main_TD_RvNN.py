@@ -27,8 +27,9 @@ from evaluate import *
 #from Util import *
 
 obj = "Twitter15" # choose dataset, you can choose either "Twitter15" or "Twitter16"
+# tag = "_u2b"
+tag = ""
 fold = "2" # fold index, choose from 0-4
-tag = "_u2b"
 vocabulary_size = 5000
 hidden_dim = 100
 Nclass = 4
@@ -39,11 +40,32 @@ unit="TD_RvNN-"+obj+str(fold)+'-vol.'+str(vocabulary_size)+tag
 #lossPath = "../loss/loss-"+unit+".txt"
 #modelPath = "../param/param-"+unit+".npz" 
 
-treePath = '../resource/data.TD_RvNN.vol_'+str(vocabulary_size)+'.txt' 
 
-trainPath = "../nfold/RNNtrainSet_"+obj+str(fold)+"_tree.txt" 
-testPath = "../nfold/RNNtestSet_"+obj+str(fold)+"_tree.txt"
-labelPath = "../resource/"+obj+"_label_All.txt"
+# obj = "Twitter15"  # choose dataset, you can choose either "Twitter15" or "Twitter16" or PHEME.
+# fold = "3"  # fold index, choose from 0-4 #you need to use 3 for twitter15/16
+# treePath = '../resource/data.TD_RvNN.vol_' + str(vocabulary_size) + tag + '.txt'
+# trainPath = "../nfold/RNNtrainSet_" + obj + str(fold) + "_tree.txt"
+# testPath = "../nfold/RNNtestSet_" + obj + str(fold) + "_tree.txt"
+# labelPath = "../resource/" + obj + "_label_All.txt"
+
+
+
+
+
+###### PHEME
+# treePath = '../resource/data.TD_RvNN_PHEME.vol_' + str(vocabulary_size) + tag + '.txt'
+# labelPath = "../resource/" + "PHEME"+ "_label_All.txt"
+# trainPath = "../nfold/train_PHEME1.txt"
+# testPath = "../nfold/test_PHEME1.txt"
+
+
+
+# Shaun
+# treePath = '../resource/shaun_TD.txt'
+# trainPath = "../nfold/train_dual1.txt"
+# testPath = "../nfold/test_dual1.txt"
+# labelPath = "../resource/falsified_labels.txt"
+
 
 #floss = open(lossPath, 'a+')
 
