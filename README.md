@@ -7,6 +7,7 @@ CHANGELOG:
 
 - readme u2b tag removed.
 - added new pointers.
+- added a counter for the trees, located in resource fabrication. Place with raw twitter 15/16 dataset folder to count the trees in preprocessed VS actual trees in dataset.
 
 * \1 = ['news', 'non-rumor']
 * \2 = ['false']
